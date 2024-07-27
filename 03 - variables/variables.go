@@ -4,11 +4,7 @@ import (
 	"fmt"
 )
 
-
-
 func main() {
-	// Variables
-	fmt.Println("---------- Variables ----------")
 	var a = "initial"
 	fmt.Println(a)
 
