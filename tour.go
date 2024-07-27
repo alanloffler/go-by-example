@@ -49,32 +49,4 @@ func main() {
 	fmt.Println(int64(d2))
 
 	fmt.Println(math.Sin(n))
-
-	fmt.Println("---------- For Loop ----------")
-	i := 1
-	for i <= 3 {
-		fmt.Println(i)
-		i = i + 1 // also i++ and i += 1
-	}
-
-	for j := 0; j < 3; j++ {
-		fmt.Println(j)
-	}
-
-	for i := range 3 {
-		fmt.Println(i)
-	}
-
-	for {
-		fmt.Println("loop")
-		break
-	}
-
-	for n := range 6 {
-		if n%2 == 0 {
-			continue
-		}
-
-		fmt.Println(n)
-	}
 }
