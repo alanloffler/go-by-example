@@ -2,17 +2,11 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
-// Constants
-const s string = "constant"
+
 
 func main() {
-	// hello world
-	fmt.Println("---------- Hello World ----------")
-	fmt.Println("Hello, World!")
-
 	// Values
 	fmt.Println("---------- Values ----------")
 	fmt.Println("Go" + "lang")
@@ -38,15 +32,4 @@ func main() {
 
 	f := "apple"
 	fmt.Println(f)
-
-	fmt.Println("---------- Constants ----------")
-	fmt.Println(s)
-
-	const n = 500000000
-	const d2 = 3e20 / n
-	fmt.Println(d2)
-
-	fmt.Println(int64(d2))
-
-	fmt.Println(math.Sin(n))
 }
