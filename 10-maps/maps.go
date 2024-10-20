@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 func main() {
 	// Create empty map
@@ -25,4 +28,22 @@ func main() {
 	// Remove key/value
 	delete(m, "k2")
 	fmt.Println("map:", m)
+
+	// Remove all keys/values
+	clear(m)
+	fmt.Println("m:", m)
+
+	// Second optional value
+	_, prs := m["k2"]
+	fmt.Println("prs:", prs)
+
+	// Declare and initialize in same line
+	n := map[string]int{"foo": 1, "bar": 2}
+	fmt.Println("n:", n)
+
+	// Maps utility package
+	n2 := map[string]int{"foo": 1, "bar": 2}
+	if maps.Equal(n, n2) {
+		fmt.Println("n == n2")
+	}
 }
