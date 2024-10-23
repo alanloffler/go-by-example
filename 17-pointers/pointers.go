@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Pointers references a memory address to values and records
 func zeroval(ival int) {
 	ival = 0
 }
@@ -17,6 +18,7 @@ func main() {
 	zeroval(i)
 	fmt.Println("zeroval:", i)
 
+	// &i memory address
 	zeroptr(&i)
 	fmt.Println("zeroptr:", i)
 
