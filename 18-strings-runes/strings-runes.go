@@ -1,3 +1,4 @@
+
 // A Go string is a read-only slice of bytes. A string is a containers of text encoded in UTF-8.
 // In Go, a character is called a rune - it’s an integer that represents a Unicode code point.
 
