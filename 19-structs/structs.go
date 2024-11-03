@@ -36,4 +36,23 @@ func main() {
 	// Access struct fields with a dot
 	s := person{name: "Sean", age: 50}
 	fmt.Println(s.name)
+
+	// Dots with struct pointers
+	sp := &s
+	fmt.Println(sp.age)
+
+	// Structs are mutable
+	sp.age = 51
+	fmt.Println(sp.age)
+
+	// Struct type for single value doesn't need a name
+	// Can have anonimous struct type (used for table driven tests)
+	dog := struct {
+		name   string
+		isGood bool
+	}{
+		"Rex",
+		true,
+	}
+	fmt.Println(dog)
 }
